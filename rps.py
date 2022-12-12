@@ -4,7 +4,7 @@ def get_choices():
     player_choice = input("Enter a choice (rock, paper, scissors: ") 
     options = ["rock", "paper", "scissors"] #list of string values
     computer_choice = random.choice(options) #random from random library
-    choices = {"player": player_choice, "computer": computer_choice} #dictionary - Associates 2 values to each other
+    choices = {"player": player_choice, "computer": computer_choice} #dict associates 2 values to each other
     return choices
 
 def check_win(player, computer):
