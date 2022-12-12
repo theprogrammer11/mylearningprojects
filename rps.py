@@ -14,18 +14,18 @@ def check_win(player, computer):
     elif player == "rock": 
         if computer == "scissors":
             return "Rock smashes scissors! You win!"
-    else: 
-        return "Paper covers rock! You lose."
-    if player == "paper": 
+        else: 
+            return "Paper covers rock! You lose."
+    elif player == "paper": 
         if computer == "rock":
             return "Paper covers rock! You win!"
-    else: 
-        return "Scissors cuts paper! You lose."
-    if player == "scissors": 
+        else: 
+            return "Scissors cuts paper! You lose."
+    elif player == "scissors": 
         if computer == "paper":
             return "Scissors cuts paper! You win!"
-    else: 
-        return "Rock smashes scissors! You lose."
+        else: 
+            return "Rock smashes scissors! You lose."
 
 choices = get_choices() 
 result = check_win(choices["player"], choices["computer"]) #checks associate values in choices dictionary
